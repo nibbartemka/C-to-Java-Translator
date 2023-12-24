@@ -1,0 +1,23 @@
+float e = 10.5;
+float n;
+int a = (((5 + 2) * 3) + 76);
+int b = 10;
+boolean c = ((a == b) && ((3 + 2) == 5));
+if ((a == 5)){
+
+};
+while (true){
+a = (a + 1);
+};
+for (int i = 0; (i < a); i = (i + 1)) {
+for (int j = 1; (j < 10); j = (j + 1)) {
+int z;
+int zz;
+int zzz;
+int zzzz = 4;
+};
+};
+boolean hello(int a, String b) {
+System.out.print(123);
+};
+int zzzzz = 5;

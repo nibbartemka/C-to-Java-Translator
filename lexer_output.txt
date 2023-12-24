@@ -1,0 +1,135 @@
+<ID, float>
+<ID, e>
+<ASSIGN '=', =>
+<FLOAT-LITERAL, 10.5>
+<;, ;>
+<ID, float>
+<ID, n>
+<;, ;>
+<ID, int>
+<ID, a>
+<ASSIGN '=', =>
+<LBR '(', (>
+<INT-LITERAL, 5>
+<PLUS '+', +>
+<INT-LITERAL, 2>
+<RBR ')', )>
+<ASTERISK '*', *>
+<INT-LITERAL, 3>
+<PLUS '+', +>
+<INT-LITERAL, 76>
+<;, ;>
+<ID, int>
+<ID, b>
+<ASSIGN '=', =>
+<INT-LITERAL, 10>
+<;, ;>
+<ID, bool>
+<ID, c>
+<ASSIGN '=', =>
+<ID, a>
+<EQ '==', ==>
+<ID, b>
+<AND, and>
+<INT-LITERAL, 3>
+<PLUS '+', +>
+<INT-LITERAL, 2>
+<EQ '==', ==>
+<INT-LITERAL, 5>
+<;, ;>
+<IF, if>
+<LBR '(', (>
+<ID, a>
+<EQ '==', ==>
+<INT-LITERAL, 5>
+<RBR ')', )>
+<LCBR '{', {>
+<RCBR '}', }>
+<WHILE, while>
+<LBR '(', (>
+<ID, true>
+<RBR ')', )>
+<LCBR '{', {>
+<ID, a>
+<ASSIGN '=', =>
+<ID, a>
+<PLUS '+', +>
+<INT-LITERAL, 1>
+<;, ;>
+<RCBR '}', }>
+<FOR, for>
+<LBR '(', (>
+<ID, int>
+<ID, i>
+<ASSIGN '=', =>
+<INT-LITERAL, 0>
+<;, ;>
+<ID, i>
+<L '<', <>
+<ID, a>
+<;, ;>
+<ID, i>
+<ASSIGN '=', =>
+<ID, i>
+<PLUS '+', +>
+<INT-LITERAL, 1>
+<RBR ')', )>
+<LCBR '{', {>
+<FOR, for>
+<LBR '(', (>
+<ID, int>
+<ID, j>
+<ASSIGN '=', =>
+<INT-LITERAL, 1>
+<;, ;>
+<ID, j>
+<L '<', <>
+<INT-LITERAL, 10>
+<;, ;>
+<ID, j>
+<ASSIGN '=', =>
+<ID, j>
+<PLUS '+', +>
+<INT-LITERAL, 1>
+<RBR ')', )>
+<LCBR '{', {>
+<ID, int>
+<ID, z>
+<;, ;>
+<ID, int>
+<ID, zz>
+<;, ;>
+<ID, int>
+<ID, zzz>
+<;, ;>
+<ID, int>
+<ID, zzzz>
+<ASSIGN '=', =>
+<INT-LITERAL, 4>
+<;, ;>
+<RCBR '}', }>
+<RCBR '}', }>
+<ID, bool>
+<ID, hello>
+<LBR '(', (>
+<ID, int>
+<ID, a>
+<COMMA ',', ,>
+<ID, String>
+<ID, b>
+<RBR ')', )>
+<LCBR '{', {>
+<ID, Console>
+<DOT, .>
+<ID, Write>
+<LBR '(', (>
+<INT-LITERAL, 123>
+<RBR ')', )>
+<;, ;>
+<RCBR '}', }>
+<ID, int>
+<ID, zzzzz>
+<ASSIGN '=', =>
+<INT-LITERAL, 5>
+<;, ;>
+<EOF, >

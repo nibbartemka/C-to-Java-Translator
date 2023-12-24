@@ -1,0 +1,41 @@
+Scope: global
+   Variables:
+       <ID, true> True
+       <ID, false> False
+       <ID, Console> True
+       <ID, WriteLine> False
+       <ID, Write> True
+      float <ID, e> False
+      float <ID, n> False
+      int <ID, a> True
+      int <ID, b> True
+      boolean <ID, c> False
+      Function <ID, hello> True
+      int <ID, zzzzz> False
+   Children:
+      Scope: If
+         Variables:
+         Children:
+      Scope: Else
+         Variables:
+         Children:
+      Scope: While
+         Variables:
+         Children:
+      Scope: For
+         Variables:
+            int <ID, i> True
+         Children:
+            Scope: For
+               Variables:
+                  int <ID, j> True
+                  int <ID, z> False
+                  int <ID, zz> False
+                  int <ID, zzz> False
+                  int <ID, zzzz> False
+               Children:
+      Scope: Function hello
+         Variables:
+            int <ID, a> True
+            String <ID, b> True
+         Children:

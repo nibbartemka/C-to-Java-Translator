@@ -1,0 +1,184 @@
+NodeProgram
+|+-children:
+|   |+-NodeDeclaration
+|   |   |+-type: NodeAtomType
+|   |   |   |+-id: <ID, float>
+|   |   |+-id: NodeVar
+|   |   |   |+-id: <ID, e>
+|   |   |+-value: NodeFloatLiteral
+|   |   |   |+-value: <FLOAT-LITERAL, 10.5>
+|   |+-NodeDeclaration
+|   |   |+-type: NodeAtomType
+|   |   |   |+-id: <ID, float>
+|   |   |+-id: NodeVar
+|   |   |   |+-id: <ID, n>
+|   |+-NodeDeclaration
+|   |   |+-type: NodeAtomType
+|   |   |   |+-id: <ID, int>
+|   |   |+-id: NodeVar
+|   |   |   |+-id: <ID, a>
+|   |   |+-value: NodePlus
+|   |   |   |+-left: NodeMultiply
+|   |   |   |   |+-left: NodePlus
+|   |   |   |   |   |+-left: NodeIntLiteral
+|   |   |   |   |   |   |+-value: <INT-LITERAL, 5>
+|   |   |   |   |   |+-right: NodeIntLiteral
+|   |   |   |   |   |   |+-value: <INT-LITERAL, 2>
+|   |   |   |   |+-right: NodeIntLiteral
+|   |   |   |   |   |+-value: <INT-LITERAL, 3>
+|   |   |   |+-right: NodeIntLiteral
+|   |   |   |   |+-value: <INT-LITERAL, 76>
+|   |+-NodeDeclaration
+|   |   |+-type: NodeAtomType
+|   |   |   |+-id: <ID, int>
+|   |   |+-id: NodeVar
+|   |   |   |+-id: <ID, b>
+|   |   |+-value: NodeIntLiteral
+|   |   |   |+-value: <INT-LITERAL, 10>
+|   |+-NodeDeclaration
+|   |   |+-type: NodeAtomType
+|   |   |   |+-id: <ID, bool>
+|   |   |+-id: NodeVar
+|   |   |   |+-id: <ID, c>
+|   |   |+-value: NodeAnd
+|   |   |   |+-left: NodeEQ
+|   |   |   |   |+-left: NodeVar
+|   |   |   |   |   |+-id: <ID, a>
+|   |   |   |   |+-right: NodeVar
+|   |   |   |   |   |+-id: <ID, b>
+|   |   |   |+-right: NodeEQ
+|   |   |   |   |+-left: NodePlus
+|   |   |   |   |   |+-left: NodeIntLiteral
+|   |   |   |   |   |   |+-value: <INT-LITERAL, 3>
+|   |   |   |   |   |+-right: NodeIntLiteral
+|   |   |   |   |   |   |+-value: <INT-LITERAL, 2>
+|   |   |   |   |+-right: NodeIntLiteral
+|   |   |   |   |   |+-value: <INT-LITERAL, 5>
+|   |+-NodeIfConstruction
+|   |   |+-condition: NodeEQ
+|   |   |   |+-left: NodeVar
+|   |   |   |   |+-id: <ID, a>
+|   |   |   |+-right: NodeIntLiteral
+|   |   |   |   |+-value: <INT-LITERAL, 5>
+|   |   |+-block: NodeBlock
+|   |   |   |+-children:
+|   |   |+-else_block: NodeElseBlock
+|   |   |   |+-children:
+|   |+-NodeWhileConstruction
+|   |   |+-condition: NodeVar
+|   |   |   |+-id: <ID, true>
+|   |   |+-block: NodeBlock
+|   |   |   |+-children:
+|   |   |   |   |+-NodeAssigning
+|   |   |   |   |   |+-left_side: NodeVar
+|   |   |   |   |   |   |+-id: <ID, a>
+|   |   |   |   |   |+-right_side: NodePlus
+|   |   |   |   |   |   |+-left: NodeVar
+|   |   |   |   |   |   |   |+-id: <ID, a>
+|   |   |   |   |   |   |+-right: NodeIntLiteral
+|   |   |   |   |   |   |   |+-value: <INT-LITERAL, 1>
+|   |+-NodeForConstruction
+|   |   |+-init: NodeDeclaration
+|   |   |   |+-type: NodeAtomType
+|   |   |   |   |+-id: <ID, int>
+|   |   |   |+-id: NodeVar
+|   |   |   |   |+-id: <ID, i>
+|   |   |   |+-value: NodeIntLiteral
+|   |   |   |   |+-value: <INT-LITERAL, 0>
+|   |   |+-condition: NodeL
+|   |   |   |+-left: NodeVar
+|   |   |   |   |+-id: <ID, i>
+|   |   |   |+-right: NodeVar
+|   |   |   |   |+-id: <ID, a>
+|   |   |+-step: NodeAssigning
+|   |   |   |+-left_side: NodeVar
+|   |   |   |   |+-id: <ID, i>
+|   |   |   |+-right_side: NodePlus
+|   |   |   |   |+-left: NodeVar
+|   |   |   |   |   |+-id: <ID, i>
+|   |   |   |   |+-right: NodeIntLiteral
+|   |   |   |   |   |+-value: <INT-LITERAL, 1>
+|   |   |+-block: NodeBlock
+|   |   |   |+-children:
+|   |   |   |   |+-NodeForConstruction
+|   |   |   |   |   |+-init: NodeDeclaration
+|   |   |   |   |   |   |+-type: NodeAtomType
+|   |   |   |   |   |   |   |+-id: <ID, int>
+|   |   |   |   |   |   |+-id: NodeVar
+|   |   |   |   |   |   |   |+-id: <ID, j>
+|   |   |   |   |   |   |+-value: NodeIntLiteral
+|   |   |   |   |   |   |   |+-value: <INT-LITERAL, 1>
+|   |   |   |   |   |+-condition: NodeL
+|   |   |   |   |   |   |+-left: NodeVar
+|   |   |   |   |   |   |   |+-id: <ID, j>
+|   |   |   |   |   |   |+-right: NodeIntLiteral
+|   |   |   |   |   |   |   |+-value: <INT-LITERAL, 10>
+|   |   |   |   |   |+-step: NodeAssigning
+|   |   |   |   |   |   |+-left_side: NodeVar
+|   |   |   |   |   |   |   |+-id: <ID, j>
+|   |   |   |   |   |   |+-right_side: NodePlus
+|   |   |   |   |   |   |   |+-left: NodeVar
+|   |   |   |   |   |   |   |   |+-id: <ID, j>
+|   |   |   |   |   |   |   |+-right: NodeIntLiteral
+|   |   |   |   |   |   |   |   |+-value: <INT-LITERAL, 1>
+|   |   |   |   |   |+-block: NodeBlock
+|   |   |   |   |   |   |+-children:
+|   |   |   |   |   |   |   |+-NodeDeclaration
+|   |   |   |   |   |   |   |   |+-type: NodeAtomType
+|   |   |   |   |   |   |   |   |   |+-id: <ID, int>
+|   |   |   |   |   |   |   |   |+-id: NodeVar
+|   |   |   |   |   |   |   |   |   |+-id: <ID, z>
+|   |   |   |   |   |   |   |+-NodeDeclaration
+|   |   |   |   |   |   |   |   |+-type: NodeAtomType
+|   |   |   |   |   |   |   |   |   |+-id: <ID, int>
+|   |   |   |   |   |   |   |   |+-id: NodeVar
+|   |   |   |   |   |   |   |   |   |+-id: <ID, zz>
+|   |   |   |   |   |   |   |+-NodeDeclaration
+|   |   |   |   |   |   |   |   |+-type: NodeAtomType
+|   |   |   |   |   |   |   |   |   |+-id: <ID, int>
+|   |   |   |   |   |   |   |   |+-id: NodeVar
+|   |   |   |   |   |   |   |   |   |+-id: <ID, zzz>
+|   |   |   |   |   |   |   |+-NodeDeclaration
+|   |   |   |   |   |   |   |   |+-type: NodeAtomType
+|   |   |   |   |   |   |   |   |   |+-id: <ID, int>
+|   |   |   |   |   |   |   |   |+-id: NodeVar
+|   |   |   |   |   |   |   |   |   |+-id: <ID, zzzz>
+|   |   |   |   |   |   |   |   |+-value: NodeIntLiteral
+|   |   |   |   |   |   |   |   |   |+-value: <INT-LITERAL, 4>
+|   |+-NodeFunction
+|   |   |+-name: NodeVar
+|   |   |   |+-id: <ID, hello>
+|   |   |+-params: NodeFormalParams
+|   |   |   |+-types:
+|   |   |   |   |+-NodeAtomType
+|   |   |   |   |   |+-id: <ID, int>
+|   |   |   |   |+-NodeAtomType
+|   |   |   |   |   |+-id: <ID, String>
+|   |   |   |+-ids:
+|   |   |   |   |+-NodeVar
+|   |   |   |   |   |+-id: <ID, a>
+|   |   |   |   |+-NodeVar
+|   |   |   |   |   |+-id: <ID, b>
+|   |   |+-return_type: NodeAtomType
+|   |   |   |+-id: <ID, bool>
+|   |   |+-block: NodeBlock
+|   |   |   |+-children:
+|   |   |   |   |+-NodeCall
+|   |   |   |   |   |+-callable: NodeChainedVar
+|   |   |   |   |   |   |+-ids:
+|   |   |   |   |   |   |   |+-NodeVar
+|   |   |   |   |   |   |   |   |+-id: <ID, Console>
+|   |   |   |   |   |   |   |+-NodeVar
+|   |   |   |   |   |   |   |   |+-id: <ID, Write>
+|   |   |   |   |   |+-params: NodeActualParams
+|   |   |   |   |   |   |+-values:
+|   |   |   |   |   |   |   |+-NodeIntLiteral
+|   |   |   |   |   |   |   |   |+-value: <INT-LITERAL, 123>
+|   |+-NodeDeclaration
+|   |   |+-type: NodeAtomType
+|   |   |   |+-id: <ID, int>
+|   |   |+-id: NodeVar
+|   |   |   |+-id: <ID, zzzzz>
+|   |   |+-value: NodeIntLiteral
+|   |   |   |+-value: <INT-LITERAL, 5>
+
