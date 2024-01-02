@@ -6,11 +6,13 @@ int b = 10;
 bool c = a == b and 3 + 2 == 5;
 
 if (a == 5) {
+    int d = 5;
 }
 
 
 while (true) {
     a = a + 1;
+    int f = 5;
 }
 
 // aboba

@@ -68,7 +68,7 @@ class Scope:
         curr_scope = self
         while curr_scope != None:
             if name in curr_scope.variable_table:
-                return Variable(name, curr_scope.variable_table[name])
+                return Variable(name, curr_scope.variable_table[name], curr_scope.variable_table[name].value, curr_scope.variable_table[name].is_using)
             curr_scope = curr_scope.parent
         return None
     
@@ -85,6 +85,13 @@ class Scope:
     
     def has_variable(self, name: Token) -> bool:
         return self.find_variable(name.value) is not None
+
+    def is_var_using(self, name: str) -> bool:
+        var_ = self.find_variable(name)
+        if not var_:
+            return False
+        else:
+            return var_.is_using
     
     def change_is_using(self, name: Token) -> None:
         scope = self.find_scope(name.value)

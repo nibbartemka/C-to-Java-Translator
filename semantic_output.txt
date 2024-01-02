@@ -10,6 +10,7 @@ Scope: global
       int <ID, a> True
       int <ID, b> True
       boolean <ID, c> False
+      int <ID, d> False
       Function <ID, hello> True
       int <ID, zzzzz> False
    Children:
@@ -21,6 +22,7 @@ Scope: global
          Children:
       Scope: While
          Variables:
+            int <ID, f> False
          Children:
       Scope: For
          Variables:

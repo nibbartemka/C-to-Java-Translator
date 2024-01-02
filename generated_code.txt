@@ -4,10 +4,11 @@ int a = (((5 + 2) * 3) + 76);
 int b = 10;
 boolean c = ((a == b) && ((3 + 2) == 5));
 if ((a == 5)){
-
+int d = 5;
 };
 while (true){
 a = (a + 1);
+int f = 5;
 };
 for (int i = 0; (i < a); i = (i + 1)) {
 for (int j = 1; (j < 10); j = (j + 1)) {

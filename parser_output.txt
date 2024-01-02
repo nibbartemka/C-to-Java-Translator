@@ -62,6 +62,13 @@ NodeProgram
 |   |   |   |   |+-value: <INT-LITERAL, 5>
 |   |   |+-block: NodeBlock
 |   |   |   |+-children:
+|   |   |   |   |+-NodeDeclaration
+|   |   |   |   |   |+-type: NodeAtomType
+|   |   |   |   |   |   |+-id: <ID, int>
+|   |   |   |   |   |+-id: NodeVar
+|   |   |   |   |   |   |+-id: <ID, d>
+|   |   |   |   |   |+-value: NodeIntLiteral
+|   |   |   |   |   |   |+-value: <INT-LITERAL, 5>
 |   |   |+-else_block: NodeElseBlock
 |   |   |   |+-children:
 |   |+-NodeWhileConstruction
@@ -77,6 +84,13 @@ NodeProgram
 |   |   |   |   |   |   |   |+-id: <ID, a>
 |   |   |   |   |   |   |+-right: NodeIntLiteral
 |   |   |   |   |   |   |   |+-value: <INT-LITERAL, 1>
+|   |   |   |   |+-NodeDeclaration
+|   |   |   |   |   |+-type: NodeAtomType
+|   |   |   |   |   |   |+-id: <ID, int>
+|   |   |   |   |   |+-id: NodeVar
+|   |   |   |   |   |   |+-id: <ID, f>
+|   |   |   |   |   |+-value: NodeIntLiteral
+|   |   |   |   |   |   |+-value: <INT-LITERAL, 5>
 |   |+-NodeForConstruction
 |   |   |+-init: NodeDeclaration
 |   |   |   |+-type: NodeAtomType
